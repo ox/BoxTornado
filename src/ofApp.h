@@ -5,12 +5,16 @@
 
 class ofApp : public ofBaseApp{
 public:
-    ofLight light; // creates a light and enables lighting
-//    ofEasyCam cam; // add mouse controls for camera movement
-    ofFbo rgbaFboFloat; // with alpha
+    // creates a light and enables lighting
+    ofLight light;
+    
+    // FBO to draw to
+    ofFbo rgbaFboFloat;
+    
+    // Amount to fade between renders
     int fadeAmount;
     
-    // Seconds for a 90 deg rotation
+    // Seconds to complete a 90 deg rotation
     float rot90T = 30;
     
     // GUI
